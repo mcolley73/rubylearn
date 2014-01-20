@@ -1,0 +1,16 @@
+<h1>New video, natch.</h1>
+<%= form_for :video, url: videos_path do |v| %>
+  <p>
+    <%= v.label :title %><br>
+    <%= v.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= v.label :format %><br>
+    <%= v.text_field :format %>
+  </p>
+ 
+  <p>
+    <%= v.submit %>
+  </p>
+<% end %>
